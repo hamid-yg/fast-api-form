@@ -1,15 +1,29 @@
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+from fastapi import Request
 from typing import Union
 
 from fastapi import FastAPI
 
 app = FastAPI()
 
+app.mount("/static", StaticFiles(directory="static"))
 
-@app.get("/")
+@app.get("/judgeme")
 def read_root():
-    return {"Hello": "World"}
+    return FileResponse("static/judgeme.html")
+
+# @app.post("/judgeme")
+# async def read_root(request: Request):
+#     raw_input = await request.json()
+#     print(raw_input)
+#     return {"message": "Okay"}
 
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+@app.get("/trustpilot")
+def read_root():
+    return FileResponse("static/index.html")
+
+@app.get("/yotpo")
+def read_root():
+    return FileResponse("static/index.html")
