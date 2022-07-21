@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link rel="stylesheet" href="./static/trustpilot.css" media="screen" type="text/css" />
+
+  <title>Trellis</title>
+ </head>
+
+ <body>
+      <div id="container">
+            <form action="/trustpilot" method="post" enctype="multipart/form-data">
+                  <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 7; text-align: center;"><b>Trustpilot Connexion</b></h3>
+                  <br>
+
+                  <label for="api-token" style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; "><b>API Private Token</b></label>
+                  <input type="text" name="api-token" id="api-token" required />
+                  <br><br>
+
+                  <label for="shop-domain" style="font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><b>Shop Domain</b></label>
+                  <input type="text" name="shop-domain" id="shop-domain" required />
+                  <br>
+
+                  <input type="submit" id='submit' value='Connect' style="font-size: 14px; font-family: Arial, Helvetica, sans-serif;" >
+                  <hr>
+                  <br>
+                  <p style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-align: center;"> Find your API Token and Shop Domain <a href="https://support.judge.me/support/solutions/articles/44001699603-judge-me-api-tokens-for-your-store">here</a>.</p>
+            </form>
+      </div>
+ </body>
+</html>

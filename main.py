@@ -22,8 +22,8 @@ def read_root():
 
 @app.get("/trustpilot")
 def read_root():
-    return FileResponse("static/index.html")
+    return FileResponse("static/trustpilot.html")
 
 @app.get("/yotpo")
 def read_root():
-    return FileResponse("static/index.html")
+    return FileResponse("static/yotpo.html")

@@ -1,0 +1,51 @@
+body{
+    background: #ffffff;
+}
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:15%;
+}
+form {
+    width:80%;
+    padding: 30px;
+    border: 1px solid #ffffff;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(25, 25, 25, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 5%;
+}
+#container h3{
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(78, 106, 162);
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #000032;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #000032;
+    border: 1px solid #000032;
+}
+
+p{
+    position: relative;
+    margin: 0 auto;
+}
